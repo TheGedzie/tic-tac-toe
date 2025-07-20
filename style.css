@@ -1,0 +1,117 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+  height:100%;width:100%;
+  font-size:100%;line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+a{color:inherit;}
+
+:root{
+    --clr-white: #fff;
+    --clr-blue:  #00AAFF;
+    --clr-red:   #E2393C;
+    --clr-text:  #000;
+}
+
+/* ------------------- START --------------------- */
+.start__body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.start__background-red,.start__background-blue{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: -999;
+}
+.start__background-blue{
+    background-color: var(--clr-blue);
+}
+.start__background-red{
+    right: 0;
+    background-color: var(--clr-red);
+}
+
+.start__menu{
+    width: 420px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.start__cross-container,.start__zero-container{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start__text{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--clr-text);
+}
+
+.start__btn{
+    width: 280px;
+    height: 100px;
+    background-color: var(--clr-white);
+    font-size: 32px;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.start__btn:hover{
+    transform: scale(1.1);
+}
+
+.start__decore1{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.start__decore2{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.start__decore3{
+    position: absolute;
+}
+
+
+/* -------------------- RENDER FIELD ------------------ */
+
+.field{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.field:hover{
+    background-color: grey;
+}
+
+.TileFieldString{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+}
